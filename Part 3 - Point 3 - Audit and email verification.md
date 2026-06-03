@@ -1,6 +1,6 @@
 ## 3. Audit and Email Verification Steps
 
-### ??? System Audit Log Verification
+### System Audit Log Verification
 
 #### Execution Steps:
 1. Open your API testing tool (e.g., Postman) or launch the browser's **Network Developer panel** (`F12` -> `Network` tab).

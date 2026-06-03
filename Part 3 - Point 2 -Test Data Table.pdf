@@ -1,12 +1,0 @@
-Test Case ID Scenario Type        Route ID Original Agent Receiving Agent  Schedule Slot                                                  Location Type Expected Outcome
-
-TC-FUN-01 Positive (Happy Path)   R-101 Agent John Agent Sarah             2026-07-15 09:00-12:00                                         Outdoor  Success (All rules met)
-
-TC-NEG-01 Negative (Campaign Started) R-202 Agent John Agent Sarah         2026-05-10 10:00-14:00 (Campaign started May 01)               Indoor   Fail (Blocked by date rule)
-
-TC-NEG-02 Negative (Schedule Overlap) R-303 Agent David Agent Sarah        2026-07-15 11:00-14:00 (Sarah is already working 09:00-12:00)  Outdoor  Fail (Blocked by time conflict)
-
-TC-NEG-03 Negative (Type Mismatch) R-404 Agent John Agent Mike (Agent profile is Indoor only) 2026-07-16 14:00-18:00                      Indoor   Fail (Blocked by profile mismatch)
-
-TC-NEG-04 Negative (24h Lockout)  R-101 Agent Sarah Agent Alex             2026-07-15 09:00-12:00 (Attempted 10 mins after swapping)      Outdoor  Fail (Blocked by cool-down lock)
-
